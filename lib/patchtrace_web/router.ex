@@ -17,6 +17,8 @@ defmodule PatchtraceWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :index
+
+    resources "/issues", IssueController
   end
 
   # Other scopes may use custom stacks.
