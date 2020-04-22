@@ -42,7 +42,8 @@ defmodule Patchtrace.MixProject do
       {:phoenix_live_reload, "~> 1.2", only: :dev},
       {:gettext, "~> 0.11"},
       {:jason, "~> 1.0"},
-      {:plug_cowboy, "~> 2.1"}
+      {:plug_cowboy, "~> 2.1"},
+      {:plug, "~> 1.10", [env: :prod, hex: "plug", repo: "hexpm", optional: false, override: true]}
     ]
   end
 
