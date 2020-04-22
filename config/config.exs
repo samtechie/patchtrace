@@ -15,8 +15,7 @@ config :patchtrace, PatchtraceWeb.Endpoint,
   url: [host: "localhost"],
   secret_key_base: "HpeSO5j/fLnyj9e7yYIUxAF5cvMp+N3kla14VdeUsotG+Jh740QdM0XLAQ2K/LyJ",
   render_errors: [view: PatchtraceWeb.ErrorView, accepts: ~w(html json)],
-  pubsub: [name: Patchtrace.PubSub, adapter: Phoenix.PubSub.PG2]
-
+  pubsub_server: Patchtrace.PubSub
 # Configures Elixir's Logger
 config :logger, :console,
   format: "$time $metadata[$level] $message\n",
