@@ -33,7 +33,7 @@ defmodule Patchtrace.MixProject do
   # Type `mix help deps` for examples and options.
   defp deps do
     [
-      {:phoenix, "~> 1.5.0-rc.0", override: true},
+      {:phoenix, "~> 1.5.1"},
       {:phoenix_pubsub, "~> 2.0"},
       {:phoenix_ecto, "~> 4.0"},
       {:ecto_sql, "~> 3.1"},
@@ -42,8 +42,7 @@ defmodule Patchtrace.MixProject do
       {:phoenix_live_reload, "~> 1.2", only: :dev},
       {:gettext, "~> 0.11"},
       {:jason, "~> 1.0"},
-      {:plug_cowboy, "~> 2.1"},
-      {:plug, "~> 1.10", [env: :prod, hex: "plug", repo: "hexpm", optional: false, override: true]}
+      {:plug_cowboy, "~> 2.1"}
     ]
   end
 
