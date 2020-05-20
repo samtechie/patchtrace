@@ -12,10 +12,15 @@ config :patchtrace,
 
 # Configures the endpoint
 config :patchtrace, PatchtraceWeb.Endpoint,
+  live_view: [
+    signing_salt: "xBvM6FE6vLGv1jj363Kh6wECIt7pNBgf"
+  ],
   url: [host: "localhost"],
   secret_key_base: "HpeSO5j/fLnyj9e7yYIUxAF5cvMp+N3kla14VdeUsotG+Jh740QdM0XLAQ2K/LyJ",
   render_errors: [view: PatchtraceWeb.ErrorView, accepts: ~w(html json)],
   pubsub_server: Patchtrace.PubSub
+
+
 # Configures Elixir's Logger
 config :logger, :console,
   format: "$time $metadata[$level] $message\n",

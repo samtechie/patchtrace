@@ -4,7 +4,8 @@ defmodule PatchtraceWeb.Router do
   pipeline :browser do
     plug :accepts, ["html"]
     plug :fetch_session
-    plug :fetch_flash
+    plug :fetch_live_flash
+    plug :put_root_layout, {PatchtraceWeb.LayoutView, :root}
     plug :protect_from_forgery
     plug :put_secure_browser_headers
   end
@@ -20,6 +21,10 @@ defmodule PatchtraceWeb.Router do
 
     resources "/issues", IssueController
     resources "/categories", CategoryController
+
+    live "/testlive", PageLive, :index
+
+
   end
 
   # Other scopes may use custom stacks.
