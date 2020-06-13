@@ -33,13 +33,13 @@ defmodule Patchtrace.MixProject do
   # Type `mix help deps` for examples and options.
   defp deps do
     [
-      {:phoenix, "~> 1.5.1"},
+      {:phoenix, "~> 1.5.3"},
       {:phoenix_pubsub, "~> 2.0"},
       {:phoenix_ecto, "~> 4.0"},
       {:ecto_sql, "~> 3.1"},
       {:postgrex, ">= 0.0.0"},
       {:phoenix_html, "~> 2.11"},
-      {:phoenix_live_view, "~> 0.12.1"},
+      {:phoenix_live_view, "~> 0.13.3"},
       {:floki, ">= 0.0.0", only: :test},
       {:phoenix_live_reload, "~> 1.2", only: :dev},
       {:gettext, "~> 0.11"},
