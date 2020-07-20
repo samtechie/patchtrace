@@ -54,5 +54,7 @@ config :logger, level: :info
 # and configuration from environment variables.
 config :patchtrace, PatchtraceWeb.Endpoint,
    force_ssl: [rewrite_on: [:x_forwarded_proto]]
+   check_origin: ["//*.patchtrace.com", "//*.gigalixirapp.com"]
+
 
 import_config "prod.secret.exs"
