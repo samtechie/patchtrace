@@ -53,8 +53,6 @@ config :logger, level: :info
 # Finally import the config/prod.secret.exs which loads secrets
 # and configuration from environment variables.
 config :patchtrace, PatchtraceWeb.Endpoint,
-   force_ssl: [rewrite_on: [:x_forwarded_proto]],
-   check_origin: ["//*.patchtrace.com", "//*.gigalixirapp.com"]
-
+   force_ssl: [rewrite_on: [:x_forwarded_proto]]
 
 import_config "prod.secret.exs"
