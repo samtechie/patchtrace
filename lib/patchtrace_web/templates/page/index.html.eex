@@ -1,11 +1,11 @@
 <section class="phx-hero">
-  <h1><%= gettext "Welcome to %{name}!", name: "Phoenix" %></h1>
-  <p>A productive web framework that<br/>does not compromise speed or maintainability.</p>
+  <h1><%= gettext "Welcome to %{name}!", name: "Patchtrace" %></h1>
+  <p>Simple Bug and Issue Tracking</p>
 </section>
 
 <section class="row">
   <article class="column">
-  <h1 class="text-orange-500 text-5xl font-bold text-center">Tailwind CSS</h1>
+  <h1 class="text-orange-500 text-5xl font-bold text-center">Available for Hire </h1>
 
     <h2>Resources</h2>
     <ul>
@@ -21,16 +21,13 @@
     </ul>
   </article>
   <article class="column">
-    <h2>Help</h2>
+    <h2>Reach out</h2>
     <ul>
       <li>
-        <a href="https://elixirforum.com/c/phoenix-forum">Forum</a>
+        <a href="https://wasswasam.com">Personal Blog</a>
       </li>
       <li>
-        <a href="https://webchat.freenode.net/?channels=elixir-lang">#elixir-lang on Freenode IRC</a>
-      </li>
-      <li>
-        <a href="https://twitter.com/elixirphoenix">Twitter @elixirphoenix</a>
+        <a href="https://twitter.com/slwasswa">Twitter @slwasswa</a>
       </li>
     </ul>
   </article>
